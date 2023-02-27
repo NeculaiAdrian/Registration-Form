@@ -1,0 +1,21 @@
+label {
+    display: inline-block;
+    width: 140px; /* adjust width as needed */
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  body{
+      background-image: url(https://images.unsplash.com/photo-1532276269954-64188308dcb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      width: auto;
+  }
+  form,h4,img,iframe,h4{
+    margin-left: 20px;
+  }
+

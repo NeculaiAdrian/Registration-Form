@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Pentru a face link cu Css unde am aranjat Label Form -->
+    <link rel="stylesheet" href="Form.css">
+
+    <!-- Pentru a cere minim 5 caractere pentru password am aplicat aceasta functie de validateForm -->
+    <script>
+		function validateForm() {
+			var password = document.forms["myForm"]["password"].value;
+			if (password.length < 5) {
+				alert("Password must be at least 5 characters long");
+				return false;
+			}
+		}
+	</script>
+
+<style>
+    h1 {
+        text-align: center; /* Center the text */
+        font-size: 2em; /* Set the font size */
+        font-weight: bold; /* Set the font weight to bold */
+        color: #f6f2f2; /* Set the text color */
+        margin-top: 0px; /* Add some margin to the top */
+    }
+   
+</style>
+
+
+</head>
+
+
+<body>
+    <br>
+    <br>
+    <h1>Registration Form</h1>
+    <br>
+    <form>
+        <br>
+        <br>
+        <h3>Please fill in your details.</h3>
+        <br>
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" placeholder="Name, Surname" required>
+        
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="5" placeholder="Min 5 characters" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="emal" required>
+        <br>
+        <br>
+            <label for="phone">Phone number:</label>
+            <select name="phone" id="phoneno">Phone number:
+            <option value="AT:+43">Austria (+43)</option>
+            <option value="BY:+375">Belarus (+375)</option>
+            <option value="BE:+32">Belgium (+32)</option>
+            <option value="BA:+387">Bosnia  (+387)</option>
+            <option value="BG:+359">Bulgaria (+359)</option>
+            <option value="HR:+385">Croatia (+385)</option>
+            <option value="CY:+357">Cyprus (+357)</option>
+            <option value="CZ:+420">Czech R(+420)</option>
+            <option value="DK:+45">Denmark (+45)</option>
+            <option value="EE:+372">Estonia (+372)</option>
+            <option value="FO:+298">Faroe I(+298)</option>
+            <option value="FI:+358">Finland (+358)</option>
+            <option value="FR:+33">France (+33)</option>
+            <option value="DE:+49">Germany (+49)</option>
+            <option value="GI:+350">Gibraltar (+350)</option>
+            <option value="GR:+30">Greece (+30)</option>
+            <option value="VA:+39">Vatican (+39)</option>
+            <option value="HU:+36">Hungary (+36)</option>
+            <option value="IS:+354">Iceland (+354)</option>
+            <option value="IE:+353">Ireland (+353)</option>
+            <option value="IT:+39">Italy (+39)</option>
+            <option value="LV:+371">Latvia (+371)</option>
+            <option value="LI:+423">Liechtenstein (+423)</option>
+            <option value="LT:+370">Lithuania (+370)</option>
+            <option value="LU:+352">Luxembourg (+352)</option>
+            <option value="MT:+356">Malta (+356)</option>
+            <option value="MD:+373">Moldova  (+373)</option>
+            <option value="MC:+377">Monaco (+377)</option>
+            <option value="ME:+382">Montenegro (+382)</option>
+            <option value="NL:+31">Netherlands (+31)</option>
+            <option value="MK:+389">North M (+389)</option>
+            <option value="NO:+47">Norway (+47)</option>
+            <option value="PL:+48">Poland (+48)</option>
+            <option value="PT:+351">Portugal (+351)</option>
+            <option value="RO:+40">Romania (+40)</option>
+            <option value="RU:+7">Russia  (+7)</option>
+            <option value="SM:+378">San Marino (+378)</option>
+            <option value="RS:+381">Serbia (+381)</option>
+            <option value="SK:+421">Slovakia (+421)</option>
+            <option value="SI:+386">Slovenia (+386)</option>
+            <option value="ES:+34">Spain (+34)</option>
+            </select>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]+" required>
+            <br>
+            <br>
+            <br>
+            <p>Payment method?</p>
+                <br>
+                <label for="cash">Cash</label>
+                <input type="radio" name="favorite" id="cash" value="cash" required><br>
+                <label for="card online">Card online</label>
+                <input type="radio" name="favorite" id="card online" value="card online" required><br>
+                <label for="bank transfer">Bank transfer</label>
+                <input type="radio" name="favorite" id="bank transfer" value="bank transfer" required><br>
+                <br>
+                <br>
+                <br>
+            <p>Options:</p>
+                <br>
+                <label for="send info">Send info to email</label>
+                <input type="checkbox" name="send info" id="send info"><br>
+                <label for="I agree">I agree with T&C</label>
+                <input type="checkbox" name="I agree" id="I agree"required><br>
+               
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+                
+       
+    </form>
+    <br>
+    <br>
+    <br>
+    <h4>This is a preview of your item:</h4>
+    <br>
+    <br>
+    <img src="https://www.ledger.com/wp-content/uploads/2019/05/Buy-now.png" width="560" height="315" alt="Missing file">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>And this is a video for how to use it:</h4>
+    <br>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uhQye7S8KFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>Thank you for buying from us!</h4>
+    <br>
+    <h4>Check out our new promotions and products on our official <a href="https://www.ledger.com/" target="_blank">webpage</a></h4>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
