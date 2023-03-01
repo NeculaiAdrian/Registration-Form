@@ -16,10 +16,10 @@ label {
       width: auto;
   }
   form,img,iframe,h5{
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   img, iframe {
-      margin-right: 20px;
+      margin-right: 10px;
   }
 
